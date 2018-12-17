@@ -6,5 +6,6 @@ from . import views
 
 urlpatterns = [
     path('', views.allblogs, name='Allblogs' ),
+    path('<int:blog_id>/', views.detail, name='detail'),
 
 ]
